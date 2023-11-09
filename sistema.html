@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+
+    .funcion, .perfil, .ecosistema {
+      text-align: center;
+      background-position: center;
+    }
+
+    .accordion-button, .accordion {
+      background-color: #E4FBFD;
+      border-color: black;
+      border-width: thin;
+      border-style: solid;
+    }
+    footer {
+            background-color: #0FBBC8;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-attachment: fixed;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ol li {
+           list-style-type:disc;
+           margin-right: 30px
+        }
+        ul li {
+            display: inline-block;
+            margin-right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<nav class="navbar navbar-expand-lg  btn btn-info">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Bedelia.html">Bedelia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active"  href="sistema.html">Siu-Guarani</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contenido
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="requerimientos.html">Requerimientos de Usuarios</a></li>
+              <li><a class="dropdown-item" href="interfaz.html">Interfaz de Usuarios</a></li>
+              <li><a class="dropdown-item" href="diagramas.html">Diagrama</a></li>
+              <li><a class="dropdown-item" href="basedatos.html">Base de Datos</a></li>
+            </ul>
+          </li> 
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          SIU-GUARANI
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          El SIU es un ecosistema de administración digital de las distintas áreas de gestión de una institución, como las administrativas financieras, académicas, de recursos humanos, de compras y patrimonio y análisis de datos, todas dedicadas a la administración de las universidades de una entidad pública.
+          <br>
+          <div class="ecosistema">
+          <img src="Imagenes/SiuGuarani.png" alt="Ecosistema Siu">
+          </div>
+          <br>
+          Pero nos concentraremos en el SIU-GUARANI ya que es el que se utiliza en dicha área
+          El SIU-GUARANI es un módulo de gestión académica que permite registrar, de manera óptima y segura, las actividades de la gestión académica dentro de una institución desde que una persona se inscribe hasta que egresa.
+          <br>
+          Sus distintas funciones son:
+          <br>
+          - Gestión de la totalidad de la oferta educativa de la institución
+          <br>
+          - Un único acceso para personas con más de un perfil (alumno, docente, autoridad, administrativo)
+          <br>
+          - Documentación académica digital: Actas, circuito de egreso y diplomas digitalizados
+          <br>
+          - Organización por módulos relacionados a la gestión: matrícula, asistencia, cursadas, egresos
+          <br>
+          - Gestión por perfiles: de datos (información) y funcionales (sobre operaciones)
+          <br>
+          - Personalización de reportes, operaciones y módulos según necesidades de la institución
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+          PRINCIPALES FUNCIONES
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          <div class="funcion">
+          <img src="Imagenes/Funciones.png" alt="Funciones Principales">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+          FUNCIONES SEGUN EL PERFIL
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          <div class="perfil">
+            <img src="Imagenes/FuncionesPerfil.png" alt="Funciones Segun Perfil">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <br><br><br><br>
+
+    <footer id="main-footer">
+      <div class="container-fluid  p-3 ">
+          <div class="row">
+              <div class="col"><i class="bi bi-person-fill"></i> Arruabarrena Rodolfo Ezequiel</div>
+              <div class="col"><i class="bi bi-person-fill"></i> Benitez Carlos Ezequiel</div>
+              <div class="col"><i class="bi bi-person-fill"></i> Bordon Ariel Agustin</div>
+              <div class="col"><i class="bi bi-person-fill"></i> Bordon Guillermo Mariano</div>
+              <div class="col"><i class="bi bi-person-fill"></i> Musso Franco Nicolas</div>
+          </div>
+      </div>
+  </footer>
+
+  <script>
+      // JavaScript para mostrar el footer cuando llega al final de la página
+      window.addEventListener('scroll', function() {
+          var footer = document.getElementById('main-footer');
+          var windowHeight = window.innerHeight;
+          var bodyHeight = document.body.offsetHeight;
+          var scrollPosition = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+
+          if (bodyHeight - (scrollPosition + windowHeight) < 10) {
+              footer.style.display = 'block';
+          } else {
+              footer.style.display = 'none';
+          }
+      });
+  </script>
+</body>
+</html>
