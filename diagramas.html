@@ -17,6 +17,20 @@
       background-repeat: no-repeat; /* Evita que la imagen se repita */
     }
 
+    .carousel-item img {
+      width: 300px;
+      /* Cambia esto al ancho que desees */
+      height: 500px;
+      /* Cambia esto al alto que desees */
+      object-fit: fill;
+      /* Esto asegura que las imágenes se redimensionen correctamente */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #80bfcd;
+    }
+
       nav.navbar {
           background-color: #17a2b8;
           color: #fff;
@@ -75,7 +89,7 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="Bedelia.html">Bedelia</a>
+            <a class="nav-link active" aria-current="page" href="bedelia.html">Bedelia</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active"  href="sistema.html">Siu-Guarani</a>
@@ -96,24 +110,35 @@
     </div>
   </nav>
 
-  <div class="container">
-    <h1>Diagramas de nivel 0 y 1 de la Plataforma Digital Universitaria</h1>
-    <br>
-    <h3>Descripción</h3>
+<div class="container">
+  <h1>Diagramas Entidad/Relacion</h1>
+</div>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
   </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <p>Diagrama Inicial y no tan detallado.</p>
+      <img src="Imagenes/CONTEXTO.png" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <p>Diagrama de Entidad/Relacion mas detallado. </p>
+      <img src="Imagenes/NIVEL_1.png" class="d-block w-100">
+    </div>
 
-  <div class="descripcion">
-    <p>
-      Descripción de los Diagramas.
-    </p>
   </div>
-  <br>
-  <h2>Diagramas de Nivel 0 o Contexto</h2>
-  <img src="Imagenes/CONTEXTO.png" width="821" height="531">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
-  <br>
-  <h2>Diagrama de Nivel 1</h2>
-  <img src="Imagenes/NIVEL_1.png" width="868" height="552">
   <br><br><br><br>
 
   <footer id="main-footer">
