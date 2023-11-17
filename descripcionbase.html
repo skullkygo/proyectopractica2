@@ -36,7 +36,7 @@
           color: #fff;
       }
 
-      h1 {
+      h1, h2 {
           color: #0CAE9D;
           text-align: center;
 
@@ -111,34 +111,71 @@
   </nav>
 
 <div class="container">
-  <h1>Diagramas Entidad/Relacion</h1>
+  <h1>Base de Datos</h1>
+  <h2>(Descripción)</h2>
 </div>
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <p>Diagrama Inicial no tan detallado y menos explicado. Para más información <a href="descdiagrama.html">click aqui.</a>.</p>
-      <img src="Imagenes/CONTEXTO.png" class="d-block w-100">
-
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Tablas
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>
+          Una tabla es una estructura de datos bidimensional que organiza la información en filas y columnas. Cada fila en la tabla representa un registro individual, mientras que cada columna representa un atributo o campo de ese registro.
+          <img src="Imagenes/Tabla.png" class="d-block w-20">
+        </p>
+      </div>
     </div>
-    <div class="carousel-item">
-      <p>Diagrama de Entidad/Relacion mas detallado. Para mas información <a href="descdiagrama1.html">click aqui.</a>
-      </p>
-      <img src="Imagenes/NIVEL_1.png" class="d-block w-100">
-    </div>
-
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Atributos
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>
+           Un atributo, también conocido como campo, columna o propiedad, es una unidad de datos en una tabla que representa una característica específica del conjunto de datos. Por ejemplo, si tienes una tabla de empleados, los atributos podrían incluir "Nombre", "Apellido", "Edad", etc. Cada columna en una tabla es un atributo que define qué tipo de datos puede contener (números, texto, fechas, etc.).
+           <img src="Imagenes/Tabla.png" class="d-block w-20">
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Conexion entre Tablas
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>
+           Las conexiones entre tablas se refieren a las relaciones que existen entre los datos almacenados en diferentes tablas de una base de datos relacional. Estas relaciones están basadas en las claves primarias y foráneas. Las claves primarias son atributos únicos que identifican de manera única cada registro en una tabla, mientras que las claves foráneas son atributos que establecen una conexión con la clave primaria de otra tabla. "Las conexiones entre las distintas tablas se muestras mediantes las lineas conectada de color morado."
+           <img src="Imagenes/Conexion.png" class="d-block w-20">
+        </p>
+      </div>
+    </div>
+  </div>
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        Claves PRIMARIAS y FORANEAS
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>
+          Clave Primaria: La clave primaria es un atributo (o conjunto de atributos) que identifica de manera única cada registro en una tabla. No puede contener valores duplicados ni nulos. La clave primaria se utiliza para establecer relaciones con otras tablas mediante claves foráneas.
+
+          Clave Foránea: La clave foránea es un atributo (o conjunto de atributos) en una tabla que establece una relación con la clave primaria de otra tabla. La clave foránea sirve como un puente entre las tablas, permitiendo la vinculación de datos entre ellas. La clave foránea en una tabla es una referencia a la clave primaria de otra tabla.
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 
   <br><br><br><br>

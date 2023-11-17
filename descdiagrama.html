@@ -36,7 +36,7 @@
           color: #fff;
       }
 
-      h1 {
+      h1, h2 {
           color: #0CAE9D;
           text-align: center;
 
@@ -112,33 +112,65 @@
 
 <div class="container">
   <h1>Diagramas Entidad/Relacion</h1>
+  <h2>(Descripción)</h2>
 </div>
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <p>Diagrama Inicial no tan detallado y menos explicado. Para más información <a href="descdiagrama.html">click aqui.</a>.</p>
-      <img src="Imagenes/CONTEXTO.png" class="d-block w-100">
-
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Entidades
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>
+          Las entidades que son mensionadas son las siguientes: "ALUMNOS", "PROFESORES" y "AUTORIDADES". Estas entidades hacen refencias a sus respectivos nombres, los Alumnos tienen la capacidad de realizar una cantidad limitadas de cosas y sus privilegios son menos. Los Profesores tienen mas privilegios que los Alumnos pero menos que las Autoridades. Y por ultimo las Autoridades tienen mas privilegios que los dos anteriores y estan capacitados a realizar distintas cosas.
+        </p>
+      </div>
     </div>
-    <div class="carousel-item">
-      <p>Diagrama de Entidad/Relacion mas detallado. Para mas información <a href="descdiagrama1.html">click aqui.</a>
-      </p>
-      <img src="Imagenes/NIVEL_1.png" class="d-block w-100">
-    </div>
-
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Flujo de datos: ALUMNOS
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>
+          Los flujos de datos que la entidad "ALUMNOS" realiza son varios como generar su propio usuario, publicar sus dudas y responder a otros mediante la utilización del foro, hacer diferentes consultas sobre fechas de examenes, solicitar un cambio de comision y hacer solicitudes de tanto libretas, notas, becas y planes de estudios. Respectivamente el sistema le proporciona una respuesta a las consultas y solicitudes realizadas.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Flujo de datos: PROFESORES
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>
+          Los flujos de datos realizados por la entidad "PROFESORES" son generar sus respectivos usuarios, poder realizar consultas en el foro y recibir sus respectivas respuestas, consultar las fichas de sus alumnos y realizar cambios en las notas y fechas de los alumnos.
+        </p>
+      </div>
+    </div>
+  </div>
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        Flujo de datos: AUTORIDADES
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>
+          Los flujos de datos que la entidad "AUTORIDADES" son como una mescla de las entidades "ALUMNOS" y "PROFESORES" ya que genera su usuario rectivamente, consulta la ficha de un alumno, hace diferentes solicitudes y recibe su respectiva respuesta. Ademas de verificar y aprobar las solicitudes realizadas por los alumnos.
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 
   <br><br><br><br>
